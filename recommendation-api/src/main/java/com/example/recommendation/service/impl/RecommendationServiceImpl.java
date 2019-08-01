@@ -117,6 +117,9 @@ public class RecommendationServiceImpl implements RecommendationService {
 		ProductsRecommendation result = new ProductsRecommendation();
 		for (ProductsRecommendation prInc : PRIncome) {
 			BigDecimal prSumInc = prInc.getSum();
+			if(result.getProducts().size() > 0){
+				break;
+			}
 			for (ProductsRecommendation prIns : PRInsurance) {
 				BigDecimal prSumIns = prIns.getSum();
 				if (prSumInc.compareTo(prSumIns) == 0) {
