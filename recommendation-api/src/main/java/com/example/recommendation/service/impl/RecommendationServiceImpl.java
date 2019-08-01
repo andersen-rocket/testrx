@@ -59,11 +59,15 @@ public class RecommendationServiceImpl implements RecommendationService {
 	}
 
 	private List<List<Product>> getCombinations(List<Product> products) {
-		List<List<Product>> incomeCombinations = new LinkedList<>();
-		for (int i = 1; i <= products.size(); i++) {
-			incomeCombinations.addAll(combination(products, i));
+		List<List<Product>> combinations = new LinkedList<>();
+		if(Objects.isNull(products)){
+			combinations.add(Collections.emptyList());
+			return combinations;
 		}
-		return incomeCombinations;
+		for (int i = 1; i <= products.size(); i++) {
+			combinations.addAll(combination(products, i));
+		}
+		return combinations;
 	}
 
 	private ProductsRecommendation definePR(List<Product> products) {
@@ -117,8 +121,7 @@ public class RecommendationServiceImpl implements RecommendationService {
 				BigDecimal prSumIns = prIns.getSum();
 				if (prSumInc.compareTo(prSumIns) == 0) {
 					BigDecimal packSum = prSumInc.add(prSumIns);
-					BigDecimal allSum = packSum.add(packSum);
-					BigDecimal resSum = result.getSum().add(allSum);
+					BigDecimal resSum = result.getSum().add(packSum);
 					if (resSum.compareTo(sum) <= 0) {
 						prInc.getProducts().forEach(result::addProduct);
 						prIns.getProducts().forEach(result::addProduct);
