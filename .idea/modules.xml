@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.product-api.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.product-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.product-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.product-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.product-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.product-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.profile-api.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.profile-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.profile-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.profile-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.profile-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.profile-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.recommendation-api.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.recommendation-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.recommendation-api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.recommendation-api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.example.recommendation-api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.example.recommendation-api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/test.iml" filepath="$PROJECT_DIR$/.idea/test.iml" />
+    </modules>
+  </component>
+</project>
